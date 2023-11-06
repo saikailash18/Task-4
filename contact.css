@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+  background-color: #3796c9;
+  height: 59px;
+  font-family: sans-serif;
+  text-align: left;
+  font-size: 32px;
+  padding-top: 30px;
+  padding-left: 22px;
+  color: rgb(233, 236, 238);
+}
+.topnav {
+  height: 34px;
+  padding-right: 0px;
+  background-color: #333;
+  font-weight: bolder;
+}
+.nav {
+  margin-top: 9px;
+  margin-left: 15px;
+  padding: 0px;
+  color: white;
+  font-size: 12px;
+  display: inline-flex;
+  /* gap: 25px; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav a {
+  padding: 9px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.nav a:hover {
+  background-color: #ff9d2f;
+}
+
+.nav .active {
+  background-color: #ff9d2f;
+}
+.image {
+  float: right;
+  justify-content: end;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+form {
+  border: 1px solid;
+  padding: 0px 15px 15px 15px;
+  background-color: #ebebeb;
+  width: 515px;
+  margin: auto;
+  margin-top: 10px;
+}
+.maincontent {
+  border: 0px solid;
+  width: 505px;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: white;
+}
+.topcontent {
+  line-height: 30px;
+}
+#nameError {
+  color: red;
+}
+#emailError {
+  color: red;
+}
+#orgError {
+  color: red;
+}
+#name {
+  margin-left: 98px;
+}
+#gender-male {
+  margin-left: 112px;
+}
+#email {
+  margin-left: 38px;
+}
+#number {
+  margin-left: 2px;
+}
+#city {
+  margin-left: 111px;
+}
+#stateDropdown {
+  margin-left: 15px;
+}
+#email1 {
+  margin-left: 168px;
+}
+#both {
+  margin-left: 168px;
+}
+#code {
+  margin-left: 51px;
+  width: 242px;
+}
+.middlecontent {
+  padding-top: 20px;
+}
+#phone {
+  margin-left: 8px;
+}
+#organization {
+  width: 418px;
+}
+#interests {
+  width: 418px;
+}
+.bottombuttons {
+  padding-bottom: 10px;
+}

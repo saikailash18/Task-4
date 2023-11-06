@@ -204,11 +204,6 @@ body {
 .heading {
   margin-left: 50px;
 }
-
-.content p {
-  display: block;
-}
-
 input[type="file"] {
   display: none;
 }
@@ -229,6 +224,8 @@ input[type="file"] {
 }
 .content p {
   margin-bottom: 20px;
+  display: block;
+  margin-left: 15px;
 }
 form p {
   font-weight: 500;

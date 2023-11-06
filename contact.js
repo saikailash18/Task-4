@@ -34,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
       emailInput.value.trim() === "" ||
       orgInput.value.trim() === ""
     ) {
-      // Display an error message for empty fields
       const errorElement = document.getElementById("nameError");
       if (nameInput.value.trim() === "") {
         errorElement.textContent = "Name is Required";
@@ -55,11 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         errorElement2.textContent = "";
       }
-
-      // Prevent the form from submitting
       event.preventDefault();
     } else {
-      // Clear the error messages
       const errorElement = document.getElementById("nameError");
       errorElement.textContent = "";
 

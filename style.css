@@ -208,3 +208,13 @@ input[type="file"] {
 form p {
   font-weight: 500;
 }
+label {
+  padding: 1px 10px 3px 10px;
+  font-family: sans-serif;
+  cursor: pointer;
+  border: 1px solid black;
+  margin-left: 5px;
+  background-color: #eeeeee;
+  font-weight: bold;
+  font-size: small;
+}

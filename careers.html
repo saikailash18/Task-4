@@ -40,22 +40,13 @@
         <p>
           <span id="resumeContainer"> Upload Resume </span>
           <span id="resumeFileName"
-            ><input type="text" name="resume" id="resume"
+            ><input type="text" name="resume" id="resume" /><input
+              type="file"
+              id="upload"
+              onchange="displayResume()"
           /></span>
-          <input
-            type="file"
-            name="upload"
-            id="upload"
-            onchange="displayResume()"
-          />
-          <input
-            id="file"
-            type="button"
-            value="Browse.."
-            onclick="document.getElementById('upload').click();"
-          />
+          <label for="upload">Browse</label>
         </p>
-
         <p><input id="submit" type="submit" value="Submit" /></p>
       </form>
     </div>

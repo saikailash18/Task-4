@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <title>Task-4</title>
@@ -15,7 +14,7 @@
         <ul class="nav">
           <li><a href="index.html">HOME</a></li>
           <li><a>SERVICES</a></li>
-          <li><a class="active" href="careers.html">CAREERS</a></li>
+          <li class="active"><a href="careers.html">CAREERS</a></li>
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
         <img class="image" src="blog-icon.png" />
@@ -37,9 +36,18 @@
         <p>Name <input type="text" name="Name" id="name" /></p>
         <p>Email <input type="text" name="email" id="email" /></p>
         <p>Desired Role <input type="text" name="role" id="role" /></p>
+
         <p>
-          Upload Resume<input type="text" name="resume" id="resume" />
-          <input type="file" name="upload" id="upload" />
+          <span id="resumeContainer"> Upload Resume </span>
+          <span id="resumeFileName"
+            ><input type="text" name="resume" id="resume"
+          /></span>
+          <input
+            type="file"
+            name="upload"
+            id="upload"
+            onchange="displayResume()"
+          />
           <input
             id="file"
             type="button"
@@ -47,8 +55,10 @@
             onclick="document.getElementById('upload').click();"
           />
         </p>
+
         <p><input id="submit" type="submit" value="Submit" /></p>
       </form>
     </div>
+    <script src="careers.js"></script>
   </body>
 </html>

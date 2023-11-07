@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = function () {
   fetch("states.json")
     .then((response) => response.json())
     .then((data) => {
@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
           stateDropdown.appendChild(option);
         }
       }
-      stateDropdown.addEventListener("change", function () {
+      stateDropdown.onclick = function () {
         const selectedState = stateDropdown.value;
         if (selectedState) {
           promoCodeField.value = data[selectedState] + " - PROMO";
         } else {
           promoCodeField.value = "";
         }
-      });
+      };
     })
     .catch((error) => console.error("Error loading JSON data:", error));
 
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const emailInput = document.getElementById("email");
   const orgInput = document.getElementById("org");
 
-  sendMessageButton.addEventListener("click", function (event) {
+  sendMessageButton.onclick = function (event) {
     if (
       nameInput.value.trim() === "" ||
       emailInput.value.trim() === "" ||
@@ -65,21 +65,22 @@ document.addEventListener("DOMContentLoaded", function () {
       const errorElement2 = document.getElementById("orgError");
       errorElement2.textContent = "";
     }
-  });
-});
+  };
+};
 
 const maleRadio = document.getElementById("gender-male");
 const femaleRadio = document.getElementById("gender-female");
-maleRadio.addEventListener("change", function () {
+maleRadio.onclick = function () {
   if (maleRadio.checked) {
     alert("Hello Sir");
   }
-});
-femaleRadio.addEventListener("change", function () {
+};
+femaleRadio.onclick = function () {
   if (femaleRadio.checked) {
     alert("Hello Lady");
   }
-});
+};
+
 function Validate() {
   var mail = document.getElementById("email").value;
   var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;

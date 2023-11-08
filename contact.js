@@ -64,16 +64,8 @@ sendMessageButton.onclick = function (event) {
     const errorElement2 = document.getElementById("orgError");
     errorElement2.textContent = "";
   }
+  Validate();
 };
-// function handleGenderRadioClick(gender) {
-//   if (gender.checked) {
-//     if (gender.id === "gender-male") {
-//       alert("Hello Sir");
-//     } else if (gender.id === "gender-female") {
-//       alert("Hello Lady");
-//     }
-//   }
-// }
 function GenderCheck() {
   const maleRadio = document.getElementById("gender-male");
   const femaleRadio = document.getElementById("gender-female");
@@ -83,18 +75,10 @@ function GenderCheck() {
     alert("Hello Lady");
   }
 }
-// function handleGenderRadioClick(event) {
-//   const gender = event.target.value;
-//   if (gender === "male") {
-//     alert("Hello Sir");
-//   } else if (gender === "female") {
-//     alert("Hello Lady");
-//   }
-// }
+
 function Validate() {
   var mail = document.getElementById("email").value;
-  var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
-
+  var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)?$/;
   if (mail === "") {
     return true;
   } else if (regx.test(mail)) {

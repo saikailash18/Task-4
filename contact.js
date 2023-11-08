@@ -65,16 +65,32 @@ sendMessageButton.onclick = function (event) {
     errorElement2.textContent = "";
   }
 };
-function handleGenderRadioClick(gender) {
-  console.log(gender);
-  if (gender.checked) {
-    if (gender.id === "gender-male") {
-      alert("Hello Sir");
-    } else if (gender.id === "gender-female") {
-      alert("Hello Lady");
-    }
+// function handleGenderRadioClick(gender) {
+//   if (gender.checked) {
+//     if (gender.id === "gender-male") {
+//       alert("Hello Sir");
+//     } else if (gender.id === "gender-female") {
+//       alert("Hello Lady");
+//     }
+//   }
+// }
+function GenderCheck() {
+  const maleRadio = document.getElementById("gender-male");
+  const femaleRadio = document.getElementById("gender-female");
+  if (maleRadio.checked) {
+    alert("Hello Sir");
+  } else if (femaleRadio.checked) {
+    alert("Hello Lady");
   }
 }
+// function handleGenderRadioClick(event) {
+//   const gender = event.target.value;
+//   if (gender === "male") {
+//     alert("Hello Sir");
+//   } else if (gender === "female") {
+//     alert("Hello Lady");
+//   }
+// }
 function Validate() {
   var mail = document.getElementById("email").value;
   var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
